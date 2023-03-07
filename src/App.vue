@@ -1,5 +1,5 @@
 <template>
-  <div id="app" class="p-0 m-0 box-border">
+  <div id="app" :dir="direction" class="p-0 m-0 box-border">
     <router-view />
   </div>
 </template>
@@ -11,6 +11,13 @@ export default {
       direction: "",
       lang,
     };
+  },
+  mounted() {
+    if (this.lang === "en") {
+      this.direction = "lft";
+    } else {
+      this.direction = "rtl";
+    }
   },
 };
 </script>

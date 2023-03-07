@@ -1,49 +1,9 @@
 <template>
   <div
-    class="login-page bg-login-page-image h-screen bg-center bg-cover capitalize"
+    class="login-page bg-home-page-image h-[100vh] bg-center bg-cover capitalize"
   >
-    <header
-      class="lg:flex md:flex sm:flex space-x-10 tracking-wider font-bold text-white justify-end pt-10 pr-20 mb-10 max-sm:hidden"
-    >
-      <router-link
-        to="{
-        name:'home'
-      }"
-        >{{ $t("home") }}</router-link
-      >
-
-      <router-link
-        to="{
-        name:'home'
-      }"
-        >{{ $t("about") }}</router-link
-      >
-      <router-link
-        to="{
-        name:'home'
-      }"
-        >{{ $t("contact us") }}</router-link
-      >
-      <router-link
-        to="{
-        name:'home'
-      }"
-        >{{ $t("login/signup") }}</router-link
-      >
-      <select
-        v-model="lang"
-        class="bg-transparent capitalize"
-        @change="changeLen($event)"
-      >
-        <option value="en" class="foucs:bg-transparent text-amber-400">
-          {{ $t("english") }}
-        </option>
-        <option value="ar" class="bg-transparent">{{ $t("arabic") }}</option>
-      </select>
-    </header>
-
+    <header-app></header-app>
     <section
-      :dir="direction"
       class="login-form max-sm:w-full max-sm:h-full bg-black-color h-auto text-stone-200 p-5 w-[50vw] rounded-lg text-center"
     >
       <h1
@@ -70,35 +30,24 @@
 </template>
 
 <script>
-// @ is an alias to /src
+import header from "@/components/HeaderSection.vue";
 
 export default {
   name: "Home-page",
   data: () => {
-    const len = localStorage.getItem("len") || "en";
     return {
       user: {
         email: "",
         password: "",
       },
-      lang: len,
-      direction: "",
     };
   },
-  mounted() {
-    if (this.lang === "en") {
-      this.direction = "lft";
-    } else {
-      this.direction = "rtl";
-    }
+  components: {
+    "header-app": header,
   },
   methods: {
     login() {
       alert("login");
-    },
-    changeLen(event) {
-      localStorage.setItem("len", event.target.value);
-      window.location.reload();
     },
   },
 };

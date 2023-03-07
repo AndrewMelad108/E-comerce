@@ -7,15 +7,14 @@ Vue.use(VueRouter);
 const routes = [
   {
     path: "/",
-    name: "login",
+    name: "home",
     component: HomePage,
   },
   {
     path: "/about",
     name: "about",
 
-    component: () =>
-      import(/* webpackChunkName: "about" */ "../views/AboutView.vue"),
+    component: () => import("../views/AboutView.vue"),
   },
 ];
 
