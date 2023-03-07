@@ -3,5 +3,15 @@
     <router-view />
   </div>
 </template>
-
+<script>
+export default {
+  data: () => {
+    const lang = localStorage.getItem("len") || "en";
+    return {
+      direction: "",
+      lang,
+    };
+  },
+};
+</script>
 <style lang="scss"></style>
