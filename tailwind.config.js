@@ -5,7 +5,7 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        "login-page-image": "url('assets/pexels-todd-trapani-1777832.jpg')",
+        "login-page-image": "url('assets/pexels-annam-w-1057858.jpg')",
       },
       colors: {
         "black-color": "rgba(2,2,2,0.4)",
