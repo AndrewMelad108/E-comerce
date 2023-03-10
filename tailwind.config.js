@@ -7,6 +7,7 @@ module.exports = {
       gridTemplateColumns: {
         // Simple 16 column grid
         "2-auto": "repeat(2, minmax(0, auto))",
+        "3-auto": "repeat(3, minmax(0, auto))",
       },
       backgroundImage: {
         // "home-page-image": "url('assets/pexels-annam-w-1057858.jpg')",

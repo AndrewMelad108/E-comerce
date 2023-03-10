@@ -33,7 +33,7 @@
           </option>
           <option value="ar" class="bg-transparent">{{ $t("arabic") }}</option>
         </select>
-        <p class="text-[15px] md:text-[10px]">Open hour: 8.00 - 18.00</p>
+        <p class="text-[15px] max-md:text-md">Open hour: 8.00 - 18.00</p>
       </div>
     </div>
     <div class="header-info p-10 flex">
@@ -129,7 +129,7 @@
         />
         <div
           v-if="show"
-          class="drop-menu bg-[#183661] col-start-1 col-end-3 shadow-black rounded-md relative top-3 space-x-4 p-5"
+          class="drop-menu bg-[#183661] col-start-1 col-end-3 w-[50vw] sm:mx-auto shadow-black rounded-md relative top-3 space-x-4 p-5"
         >
           <ul>
             <li>home</li>

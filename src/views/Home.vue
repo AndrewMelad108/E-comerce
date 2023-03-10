@@ -1,7 +1,7 @@
 <template>
   <section class="home-page capitalize">
     <header-app></header-app>
-
+    <div class="h-[1000px]"></div>
     <footer-app></footer-app>
   </section>
 </template>
