@@ -10,7 +10,7 @@ module.exports = {
         "3-auto": "repeat(3, minmax(0, auto))",
       },
       backgroundImage: {
-        // "home-page-image": "url('assets/pexels-annam-w-1057858.jpg')",
+        "intro-page-image": "url('assets/images/banner.jpg')",
         // "about-page-image": "url('assets/about-image.jpg')",
       },
       colors: {

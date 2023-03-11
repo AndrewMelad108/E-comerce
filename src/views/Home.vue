@@ -8,7 +8,7 @@
     />
     <div v-else>
       <header-app></header-app>
-      <div class="home-content h-[1000px]">
+      <div class="home-content min-h-[20000px]">
         <intro-app></intro-app>
       </div>
       <footer-app></footer-app>
